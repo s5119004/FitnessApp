@@ -2,15 +2,18 @@ import UIKit
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
-    @IBOutlet weak var profileImage: UIImageView!
 
+    @IBOutlet weak var profileimage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     
-    @IBAction func getImageButton(_ sender: UIButton) {
+    @IBAction func UIbutton(_ sender: Any) {
+    
+    
         let image = UIImagePickerController()
         image.delegate = self
         
@@ -27,15 +30,17 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     }
-   @IBAction func startButton(_ sender: UIButton) {
 
-   }
+    @IBAction func startButton(_ sender: UIButton) {
+    }
+    
+   
     
 
     func imagePickerController(_ picker:UIImagePickerController, didFinishPickingMediaWithInfo info:
     [UIImagePickerController.InfoKey : Any]) {
     if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-       profileImage.image = image
+       profileimage.image = image
     }else{
        print("error")
     }

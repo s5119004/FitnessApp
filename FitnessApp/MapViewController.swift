@@ -14,12 +14,13 @@ class MapViewController: UIViewController {
         //navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
       //  }
    // }
-    @IBOutlet weak var MapView: MKMapView!
+
+    @IBOutlet weak var MKMapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        MapView.userTrackingMode = .follow
+        MKMapView.userTrackingMode = .follow
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
@@ -38,8 +39,8 @@ class MapViewController: UIViewController {
     for coordinates in coordinates {
         let title = "Distance: \(getDistance(from: location, to: coordinates))k"
         let annotationOne = CustomAnnotation(coordinate: coordinates, title: title)
-        MapView.addAnnotation(annotationOne)
-        MapView.showAnnotations(MapView.annotations, animated: false)
+        MKMapView.addAnnotation(annotationOne)
+        MKMapView.showAnnotations(MKMapView.annotations, animated: false)
     }
  }
     func getDistance(from: CLLocation, to: CLLocationCoordinate2D) -> CLLocationDistance {
