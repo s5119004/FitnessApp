@@ -17,24 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
-                                <rect key="frame" x="170" y="462" width="35" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
+                                <rect key="frame" x="170" y="566" width="35" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="el9-TP-XlL"/>
                                 </constraints>
                                 <state key="normal" title="Start"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-0G-IA7">
-                                <rect key="frame" x="0.0" y="64" width="375" height="290"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="429"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
-                                <rect key="frame" x="135" y="362" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
+                                <rect key="frame" x="111" y="501" width="153" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vAF-gy-Qyu"/>
                                 </constraints>
-                                <state key="normal" title="Take Profile Pic"/>
+                                <state key="normal" title="Choose Profile Picture"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgm-SV-CwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784.8" y="147.97601199400302"/>
+            <point key="canvasLocation" x="1780" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h3q-ol-PbI">
