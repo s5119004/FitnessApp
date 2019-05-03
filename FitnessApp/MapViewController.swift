@@ -8,7 +8,7 @@ class MapViewController: UIViewController {
 
     var hasPutPoints = false
     
-<<<<<<< HEAD
+
     //@IBAction func BackButton(_ sender: UIBarButtonItem){
       // dismiss(animated:true, completion: nil)
        // func setCustomBackImage(){
@@ -17,9 +17,9 @@ class MapViewController: UIViewController {
    // }
 
     @IBOutlet weak var MKMapView: MKMapView!
-=======
+
     @IBOutlet weak var MapView: MKMapView!
->>>>>>> ed64b95a9c546d71b61df7bf749741c5facc2761
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

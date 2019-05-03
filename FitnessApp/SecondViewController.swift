@@ -24,6 +24,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
             print("camera not available")
         }
         
+        
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         image.allowsEditing = false
         self.present(image, animated: true) {
