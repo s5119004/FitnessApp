@@ -17,20 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
-                                <rect key="frame" x="170" y="462" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
+                                <rect key="frame" x="170" y="462" width="35" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="el9-TP-XlL"/>
                                 </constraints>
                                 <state key="normal" title="Start"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-0G-IA7">
-                                <rect key="frame" x="0.0" y="96" width="375" height="302"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-0G-IA7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="290"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
-                                <rect key="frame" x="135" y="406" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
+                                <rect key="frame" x="135" y="362" width="105" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vAF-gy-Qyu"/>
                                 </constraints>
@@ -40,8 +40,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="centerX" secondItem="EK2-n8-1eJ" secondAttribute="centerX" id="1Dk-a1-aCS"/>
+                            <constraint firstItem="ErF-0G-IA7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Tg-Ku-vcv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeN-Zp-ETN" secondAttribute="bottom" constant="175" id="5Tv-Dm-cx8"/>
+                            <constraint firstAttribute="trailing" secondItem="ErF-0G-IA7" secondAttribute="trailing" id="Ep3-5e-JGe"/>
+                            <constraint firstItem="CeN-Zp-ETN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="S3l-uc-3U1"/>
                             <constraint firstItem="CeN-Zp-ETN" firstAttribute="top" secondItem="EK2-n8-1eJ" secondAttribute="bottom" constant="70" id="jKd-S3-E8B"/>
                             <constraint firstItem="EK2-n8-1eJ" firstAttribute="top" secondItem="ErF-0G-IA7" secondAttribute="bottom" constant="28" id="vY1-lZ-p9e"/>
+                            <constraint firstItem="ErF-0G-IA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x8f-RB-IaO"/>
                             <constraint firstItem="EK2-n8-1eJ" firstAttribute="centerX" secondItem="CeN-Zp-ETN" secondAttribute="centerX" id="ydA-t1-R3c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,12 +68,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GKv-1Q-Hrp">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GKv-1Q-Hrp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GKv-1Q-Hrp" firstAttribute="leading" secondItem="g1E-Jn-C3f" secondAttribute="leading" id="AyU-E5-CiK"/>
+                            <constraint firstItem="GKv-1Q-Hrp" firstAttribute="top" secondItem="g1E-Jn-C3f" secondAttribute="top" id="ezH-ov-iQp"/>
+                            <constraint firstItem="GKv-1Q-Hrp" firstAttribute="bottom" secondItem="ExA-vU-Acm" secondAttribute="bottom" id="mur-xU-EYR"/>
+                            <constraint firstAttribute="trailing" secondItem="GKv-1Q-Hrp" secondAttribute="trailing" id="sHS-dL-RGt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ExA-vU-Acm"/>
                     </view>
                 </viewController>
