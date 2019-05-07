@@ -25,11 +25,11 @@
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gb9-7V-JGT"/>
+                                    <segue destination="3pK-RE-LQm" kind="show" id="Atz-VB-quS"/>
                                 </connections>
                             </button>
-
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
-                                <rect key="frame" x="135" y="406" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
+                                <rect key="frame" x="135" y="362" width="105" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vAF-gy-Qyu"/>
                                 </constraints>
@@ -37,10 +37,9 @@
                                 <connections>
                                     <action selector="UIbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCm-Df-riE"/>
                                 </connections>
-
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-0G-IA7">
-                                <rect key="frame" x="0.0" y="96" width="375" height="302"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-0G-IA7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="270"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -62,7 +61,6 @@
                     <navigationItem key="navigationItem" id="gsY-r4-bev"/>
                     <connections>
                         <outlet property="profileimage" destination="ErF-0G-IA7" id="1yO-BE-2rg"/>
-                        <segue destination="3pK-RE-LQm" kind="show" id="O9H-dz-Rpo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
