@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="-566" y="538"/>
         </scene>
-        <!--App Container Controller-->
+        <!--App Container View Controller-->
         <scene sceneID="AoK-Sq-BfL">
             <objects>
-                <viewController id="9x1-9y-LcT" customClass="AppContainerController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppContainerViewController" id="9x1-9y-LcT" customClass="AppContainerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FpG-vU-pdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +157,7 @@
         <!--Navigation Controller-->
         <scene sceneID="h3q-ol-PbI">
             <objects>
-                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eF5-pv-TSp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eF5-pv-TSp" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jrS-4Q-bxN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
