@@ -16,6 +16,7 @@
 		133C4EB3227C42DD00357346 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C4EB0227C42DD00357346 /* MapViewController.swift */; };
 		133C4EB4227C42DD00357346 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C4EB1227C42DD00357346 /* SecondViewController.swift */; };
 		214FA714C285ED65D3E6F3FD /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7B5B354B218AF8ED45370B /* Pods_FitnessApp.framework */; };
+		A3E1CEB22282D8C700F0E9F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E1CEB12282D8C700F0E9F1 /* LoginViewController.swift */; };
 		E2BFBAC02282CFCF00D428E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2BFBABF2282CFCF00D428E6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		133C4EB0227C42DD00357346 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		133C4EB1227C42DD00357346 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4BCA99D3E9A7FA0E15769C10 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		A3E1CEB12282D8C700F0E9F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF7B5B354B218AF8ED45370B /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BFBABF2282CFCF00D428E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E89266066D151A0AEC3F04BD /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				133C4EB1227C42DD00357346 /* SecondViewController.swift */,
 				133C4E9F227C424A00357346 /* ViewController.swift */,
 				133C4EA1227C424A00357346 /* Main.storyboard */,
+				A3E1CEB12282D8C700F0E9F1 /* LoginViewController.swift */,
 				133C4EA4227C424B00357346 /* Assets.xcassets */,
 				133C4EA6227C424B00357346 /* LaunchScreen.storyboard */,
 				E2BFBABF2282CFCF00D428E6 /* GoogleService-Info.plist */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E1CEB22282D8C700F0E9F1 /* LoginViewController.swift in Sources */,
 				133C4EA0227C424A00357346 /* ViewController.swift in Sources */,
 				133C4E9E227C424A00357346 /* AppDelegate.swift in Sources */,
 				133C4EB2227C42DD00357346 /* CustomAnnotation.swift in Sources */,
