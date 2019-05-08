@@ -7,6 +7,9 @@ PODS:
   - BoringSSL-GRPC/Interface (0.0.2)
   - Firebase (5.19.0):
     - Firebase/Core (= 5.19.0)
+  - Firebase/Auth (5.19.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.4.1)
   - Firebase/Core (5.19.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.8.0)
@@ -24,6 +27,11 @@ PODS:
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
+  - FirebaseAuth (5.4.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseAuthInterop (1.0.0)
   - FirebaseCore (5.4.0):
     - GoogleUtilities/Environment (~> 5.2)
@@ -87,6 +95,7 @@ PODS:
     - gRPC-Core/Interface (= 1.17.0)
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.17.0)
+  - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -97,6 +106,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase
+  - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
 
@@ -105,6 +115,7 @@ SPEC REPOS:
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
+    - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseFirestore
@@ -113,6 +124,7 @@ SPEC REPOS:
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
+    - GTMSessionFetcher
     - leveldb-library
     - nanopb
     - Protobuf
@@ -121,6 +133,7 @@ SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
   Firebase: c60d49e9c2630875a96207d15e2affb8364996d1
   FirebaseAnalytics: fd72a26bf8dac84cefba2f0864366f718555a5b0
+  FirebaseAuth: cbb892a66baed025efc179372598941252acf853
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 22a79a961c3951ef2f77b67bfbc99e454247b319
   FirebaseFirestore: 1531eefe02da66be6860966ac4e2cdac635706e2
@@ -129,10 +142,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
   "gRPC-C++": e76441995900ac90e9bd98644ab4733f12521edf
   gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
 
-PODFILE CHECKSUM: 676235eb9de7eb970fa7fd107f9a93bcf25d25cc
+PODFILE CHECKSUM: efac8f3ad0d27819999c48ffd4202c62a42e2612
 
 COCOAPODS: 1.5.3
