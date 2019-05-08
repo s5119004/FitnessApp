@@ -1,4 +1,5 @@
 import UIKit
+//whilst building firebase it fuvked up cuz we moved the files causong the app to not know where to locate them
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
