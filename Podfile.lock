@@ -97,6 +97,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase
+  - Firebase/Core
   - Firebase/Firestore
 
 SPEC REPOS:
@@ -132,6 +133,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
 
-PODFILE CHECKSUM: 9a9f8c743e0a0dc54f0680d77987be3791f3a4f7
+PODFILE CHECKSUM: 676235eb9de7eb970fa7fd107f9a93bcf25d25cc
 
 COCOAPODS: 1.5.3

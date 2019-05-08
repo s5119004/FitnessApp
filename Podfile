@@ -5,5 +5,5 @@ target 'FitnessApp' do
 
 pod 'Firebase'
 pod 'Firebase/Firestore'
-
+pod'Firebase/Core'
 end
