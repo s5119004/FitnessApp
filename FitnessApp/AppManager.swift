@@ -8,31 +8,28 @@ class AppManager {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     var appContainer: AppContainerViewController!
     
-    
-    
-    
-    
     private init() {}
     
+    
     func showApp() {
-        
-        var SecondViewController: UIViewController
+        var viewController: UIViewController
         
         if Auth.auth().currentUser == nil {
         //firebase way getting the cashed of the users detieleds
-            SecondViewController = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+            viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
         } else {
-            SecondViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
-            
+            viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
         }
         
-            
-        appContainer.present(SecondViewController, animated: true, completion: nil)
+        appContainer.present(viewController, animated: true, completion: nil)
         }
+    
+    
     func logout() {
         try!Auth.auth().signOut()
         appContainer.presentedViewController?.dismiss(animated: true, completion: nil)
     }
-    }
+    
+}
     
 
