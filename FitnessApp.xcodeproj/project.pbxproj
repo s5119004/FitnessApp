@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131E7849228586350045CD3D /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		133C4E9A227C424A00357346 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133C4E9D227C424A00357346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		133C4E9F227C424A00357346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 				133C4EB1227C42DD00357346 /* SecondViewController.swift */,
 				133C4E9F227C424A00357346 /* ViewController.swift */,
 				133C4EA1227C424A00357346 /* Main.storyboard */,
+				131E7849228586350045CD3D /* Location.gpx */,
 				A3E1CEB32282DC0800F0E9F1 /* AppContainerViewController.swift */,
 				E2BFBAC12282DEB200D428E6 /* AppManager.swift */,
 				A3E1CEB12282D8C700F0E9F1 /* LoginViewController.swift */,

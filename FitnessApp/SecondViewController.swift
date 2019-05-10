@@ -1,9 +1,22 @@
 import UIKit
+import FirebaseAuth
 //whilst building firebase it fuvked up cuz we moved the files causong the app to not know where to locate them
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
-
+    @IBAction func logoutTapped(_ sender: Any) {
+        
+        do{
+            try Auth.auth().signOut()
+        } catch {
+            
+          self.dismiss(animated: true, completion: nil)
+            
+            print("There was a problem logging out")
+        }
+       
+    }
+    
     @IBOutlet weak var profileimage: UIImageView!
     
     

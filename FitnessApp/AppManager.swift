@@ -20,6 +20,8 @@ class AppManager {
         } else {
             viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
         }
+        //if can't find a user then take to the login page LoginViewController
+        //if can find user then skp the login page and go to SecondViewController
         
         appContainer.present(viewController, animated: true, completion: nil)
         }
