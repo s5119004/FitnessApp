@@ -5,16 +5,7 @@ import FirebaseAuth
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
     @IBAction func logoutTapped(_ sender: Any) {
-        
-        do{
-            try Auth.auth().signOut()
-        } catch {
-            
-          self.dismiss(animated: true, completion: nil)
-            
-            print("There was a problem logging out")
-        }
-       
+        AppManager.shared.logout()
     }
     
     @IBOutlet weak var profileimage: UIImageView!
@@ -48,8 +39,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
 
     @IBAction func startButton(_ sender: UIButton) {
     }
-    @IBAction func Backbutton(_ sender: UIButton) {
-    }
+
     
 
     func imagePickerController(_ picker:UIImagePickerController, didFinishPickingMediaWithInfo info:
