@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9x1-9y-LcT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Second View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SecondViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="BYZ-38-t0r" customClass="SecondViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="login:" destination="zKW-HQ-r16" eventType="touchUpInside" id="2NQ-xo-uw0"/>
                                     <action selector="logoutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4H-Zh-7WQ"/>
                                 </connections>
                             </button>
@@ -115,7 +114,7 @@
         <scene sceneID="txE-w3-xxa">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gFV-Qd-H2v" customClass="LoginViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginViewController" id="zKW-HQ-r16" customClass="LoginViewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginViewController" id="zKW-HQ-r16">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -141,7 +140,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="login:" destination="zKW-HQ-r16" eventType="touchUpInside" id="e5m-jr-QlW"/>
+                                    <action selector="login:" destination="gFV-Qd-H2v" eventType="touchUpInside" id="dfw-2I-B2r"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,20 +158,20 @@
                             <constraint firstItem="sOU-gR-Yzc" firstAttribute="leading" secondItem="QKX-Wg-1gk" secondAttribute="leading" constant="60" id="vZW-d3-yyq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QKX-Wg-1gk"/>
-                        <connections>
-                            <outlet property="emailTextField" destination="sOU-gR-Yzc" id="mZP-79-4jq"/>
-                            <outlet property="passwordTextField" destination="iEE-C7-kJ6" id="iAk-D2-34a"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="sOU-gR-Yzc" id="mBb-3F-Oay"/>
+                        <outlet property="passwordTextField" destination="iEE-C7-kJ6" id="XR5-a5-vfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgP-vM-c0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-566" y="538"/>
+            <point key="canvasLocation" x="-567" y="543"/>
         </scene>
         <!--App Container View Controller-->
         <scene sceneID="AoK-Sq-BfL">
             <objects>
-                <viewController storyboardIdentifier="AppContainerViewController" id="9x1-9y-LcT" customClass="AppContainerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppContainerViewController" id="9x1-9y-LcT" customClass="AppContainerViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FpG-vU-pdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUz-Lt-LND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1646" y="133"/>
+            <point key="canvasLocation" x="-1617" y="131"/>
         </scene>
     </scenes>
     <resources>
