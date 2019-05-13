@@ -53,11 +53,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
-                                <rect key="frame" x="71" y="555" width="232" height="57"/>
+                                <rect key="frame" x="71" y="519" width="232" height="57"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="el9-TP-XlL"/>
+                                    <constraint firstAttribute="height" constant="57" id="el9-TP-XlL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -71,12 +71,12 @@
                         <constraints>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="centerX" secondItem="EK2-n8-1eJ" secondAttribute="centerX" id="1Dk-a1-aCS"/>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Tg-Ku-vcv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeN-Zp-ETN" secondAttribute="bottom" constant="71" id="5Tv-Dm-cx8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeN-Zp-ETN" secondAttribute="bottom" constant="91" id="5Tv-Dm-cx8"/>
                             <constraint firstAttribute="trailing" secondItem="ErF-0G-IA7" secondAttribute="trailing" id="Ep3-5e-JGe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tal-YF-UeL" secondAttribute="trailing" constant="-95" id="JuT-y1-CfH"/>
-                            <constraint firstItem="CeN-Zp-ETN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="S3l-uc-3U1"/>
+                            <constraint firstItem="CeN-Zp-ETN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="S3l-uc-3U1"/>
                             <constraint firstItem="tal-YF-UeL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ghD-0v-j2u"/>
-                            <constraint firstItem="CeN-Zp-ETN" firstAttribute="top" secondItem="EK2-n8-1eJ" secondAttribute="bottom" constant="174" id="jKd-S3-E8B"/>
+                            <constraint firstItem="CeN-Zp-ETN" firstAttribute="top" secondItem="EK2-n8-1eJ" secondAttribute="bottom" constant="127" id="jKd-S3-E8B"/>
                             <constraint firstItem="tal-YF-UeL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="199" id="pOa-6C-64D"/>
                             <constraint firstItem="EK2-n8-1eJ" firstAttribute="top" secondItem="ErF-0G-IA7" secondAttribute="bottom" constant="28" id="vY1-lZ-p9e"/>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x8f-RB-IaO"/>
