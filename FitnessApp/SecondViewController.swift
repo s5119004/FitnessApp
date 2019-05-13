@@ -48,8 +48,8 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
 
     @IBAction func startButton(_ sender: UIButton) {
     }
-    
-   
+    @IBAction func Backbutton(_ sender: UIButton) {
+    }
     
 
     func imagePickerController(_ picker:UIImagePickerController, didFinishPickingMediaWithInfo info:

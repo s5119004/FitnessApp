@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9x1-9y-LcT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,9 +43,8 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tal-YF-UeL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tal-YF-UeL">
                                 <rect key="frame" x="199" y="637" width="255" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Logout"/>
                                 <userDefinedRuntimeAttributes>
@@ -54,7 +53,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="Backbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qj-WJ-wXU"/>
                                     <action selector="logoutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4H-Zh-7WQ"/>
+                                    <segue destination="gFV-Qd-H2v" kind="show" id="5cG-e4-L6Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,8 +65,11 @@
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Tg-Ku-vcv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CeN-Zp-ETN" secondAttribute="bottom" constant="71" id="5Tv-Dm-cx8"/>
                             <constraint firstAttribute="trailing" secondItem="ErF-0G-IA7" secondAttribute="trailing" id="Ep3-5e-JGe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tal-YF-UeL" secondAttribute="trailing" constant="-95" id="JuT-y1-CfH"/>
                             <constraint firstItem="CeN-Zp-ETN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="S3l-uc-3U1"/>
+                            <constraint firstItem="tal-YF-UeL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ghD-0v-j2u"/>
                             <constraint firstItem="CeN-Zp-ETN" firstAttribute="top" secondItem="EK2-n8-1eJ" secondAttribute="bottom" constant="174" id="jKd-S3-E8B"/>
+                            <constraint firstItem="tal-YF-UeL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="199" id="pOa-6C-64D"/>
                             <constraint firstItem="EK2-n8-1eJ" firstAttribute="top" secondItem="ErF-0G-IA7" secondAttribute="bottom" constant="28" id="vY1-lZ-p9e"/>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x8f-RB-IaO"/>
                             <constraint firstItem="EK2-n8-1eJ" firstAttribute="centerX" secondItem="CeN-Zp-ETN" secondAttribute="centerX" id="ydA-t1-R3c"/>
