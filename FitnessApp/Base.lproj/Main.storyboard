@@ -17,23 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
-                                <rect key="frame" x="170" y="566" width="35" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-Zp-ETN">
+                                <rect key="frame" x="133" y="555" width="109" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="el9-TP-XlL"/>
                                 </constraints>
-                                <state key="normal" title="Start"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gb9-7V-JGT"/>
                                     <segue destination="3pK-RE-LQm" kind="show" id="Atz-VB-quS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK2-n8-1eJ">
-                                <rect key="frame" x="135" y="362" width="105" height="30"/>
+                                <rect key="frame" x="91.5" y="362" width="192" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vAF-gy-Qyu"/>
                                 </constraints>
-                                <state key="normal" title="Take Profile Pic"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Choose Profile Picture">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="UIbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCm-Df-riE"/>
                                 </connections>
@@ -43,10 +49,12 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tal-YF-UeL">
-                                <rect key="frame" x="199" y="637" width="255" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Logout"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tal-YF-UeL">
+                                <rect key="frame" x="269" y="637" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.7969427214" green="0.67150760119999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -59,7 +67,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7969427214" green="0.67150760119999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="centerX" secondItem="EK2-n8-1eJ" secondAttribute="centerX" id="1Dk-a1-aCS"/>
                             <constraint firstItem="ErF-0G-IA7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Tg-Ku-vcv"/>
@@ -83,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="-154"/>
+            <point key="canvasLocation" x="-567.20000000000005" y="-154.27286356821591"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="JUH-u8-wIQ">
@@ -118,7 +126,7 @@
         <scene sceneID="txE-w3-xxa">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gFV-Qd-H2v" customClass="LoginViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginViewController" id="zKW-HQ-r16">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="LoginViewController" id="zKW-HQ-r16" colorLabel="IBBuiltInLabel-Yellow">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -137,7 +145,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbN-Hg-LKV">
                                 <rect key="frame" x="60" y="271" width="255" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -148,7 +158,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.33740633531887765" blue="0.31292694460660575" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.7969427213786151" green="0.67150760118141983" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="sOU-gR-Yzc" firstAttribute="top" secondItem="QKX-Wg-1gk" secondAttribute="top" constant="125" id="Qeg-8Q-NMs"/>
                             <constraint firstItem="XbN-Hg-LKV" firstAttribute="leading" secondItem="QKX-Wg-1gk" secondAttribute="leading" constant="60" id="Zlj-Pk-uAO"/>
@@ -179,7 +189,7 @@
                     <view key="view" contentMode="scaleToFill" id="FpG-vU-pdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.12880319109960836" green="1" blue="0.25050074334166916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.7339373911321081" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="g8C-fM-uZs"/>
                     </view>
                 </viewController>
