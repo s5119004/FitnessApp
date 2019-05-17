@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UIimageView" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-0G-IA7">
-                                <rect key="frame" x="0.0" y="64" width="375" height="270"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="314"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -102,10 +102,25 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GKv-1Q-Hrp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjh-rK-Kbm">
+                                <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Map" id="vns-LV-VdS">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="7r8-no-A0f">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="ZXO-jf-8To"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hjh-rK-Kbm" firstAttribute="leading" secondItem="GKv-1Q-Hrp" secondAttribute="leading" id="6d9-nG-DCl"/>
                             <constraint firstItem="GKv-1Q-Hrp" firstAttribute="leading" secondItem="g1E-Jn-C3f" secondAttribute="leading" id="AyU-E5-CiK"/>
+                            <constraint firstItem="hjh-rK-Kbm" firstAttribute="top" secondItem="ExA-vU-Acm" secondAttribute="top" constant="15" id="OCl-jO-Wia"/>
+                            <constraint firstItem="hjh-rK-Kbm" firstAttribute="trailing" secondItem="GKv-1Q-Hrp" secondAttribute="trailing" id="bo7-bP-1IT"/>
                             <constraint firstItem="GKv-1Q-Hrp" firstAttribute="top" secondItem="g1E-Jn-C3f" secondAttribute="top" id="ezH-ov-iQp"/>
                             <constraint firstItem="GKv-1Q-Hrp" firstAttribute="bottom" secondItem="ExA-vU-Acm" secondAttribute="bottom" id="mur-xU-EYR"/>
                             <constraint firstAttribute="trailing" secondItem="GKv-1Q-Hrp" secondAttribute="trailing" id="sHS-dL-RGt"/>
@@ -195,26 +210,11 @@
             </objects>
             <point key="canvasLocation" x="-1652" y="105"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0Ju-gZ-ofk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F1N-10-OzQ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f5a-uD-T6h">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mUv-7c-Q5x"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gCH-L9-4Ff" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-586.39999999999998" y="-167.76611694152925"/>
-        </scene>
     </scenes>
     <resources>
         <image name="UIimageView" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZXO-jf-8To"/>
+    </inferredMetricsTieBreakers>
 </document>

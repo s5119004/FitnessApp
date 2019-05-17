@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		133C4E9E227C424A00357346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C4E9D227C424A00357346 /* AppDelegate.swift */; };
-		133C4EA0227C424A00357346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C4E9F227C424A00357346 /* ViewController.swift */; };
 		133C4EA3227C424A00357346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133C4EA1227C424A00357346 /* Main.storyboard */; };
 		133C4EA5227C424B00357346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133C4EA4227C424B00357346 /* Assets.xcassets */; };
 		133C4EA8227C424B00357346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133C4EA6227C424B00357346 /* LaunchScreen.storyboard */; };
@@ -26,7 +25,6 @@
 		131E7849228586350045CD3D /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		133C4E9A227C424A00357346 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133C4E9D227C424A00357346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		133C4E9F227C424A00357346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		133C4EA2227C424A00357346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		133C4EA4227C424B00357346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		133C4EA7227C424B00357346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				133C4EAF227C42DD00357346 /* CustomAnnotation.swift */,
 				133C4EB0227C42DD00357346 /* MapViewController.swift */,
 				133C4EB1227C42DD00357346 /* SecondViewController.swift */,
-				133C4E9F227C424A00357346 /* ViewController.swift */,
 				133C4EA1227C424A00357346 /* Main.storyboard */,
 				131E7849228586350045CD3D /* Location.gpx */,
 				A3E1CEB32282DC0800F0E9F1 /* AppContainerViewController.swift */,
@@ -247,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E1CEB22282D8C700F0E9F1 /* LoginViewController.swift in Sources */,
-				133C4EA0227C424A00357346 /* ViewController.swift in Sources */,
 				133C4E9E227C424A00357346 /* AppDelegate.swift in Sources */,
 				133C4EB2227C42DD00357346 /* CustomAnnotation.swift in Sources */,
 				133C4EB4227C42DD00357346 /* SecondViewController.swift in Sources */,

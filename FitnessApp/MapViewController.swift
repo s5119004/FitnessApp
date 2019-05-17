@@ -14,7 +14,8 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+    //This allows you to edit the location delegate and update the location.
+        
         MKMapView.userTrackingMode = .follow
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
@@ -28,7 +29,7 @@ class MapViewController: UIViewController {
     
     
     func generatePoints(from location: CLLocation) {
-        
+        //This allows you to generate random coordinates anywhere in the world
     let coordinates = getRandomCoordinates(from: location, itemCount: 3)
     
     for coordinates in coordinates {
@@ -71,7 +72,11 @@ class MapViewController: UIViewController {
         
         return items
  }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! SecondViewController
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension MapViewController: CLLocationManagerDelegate{

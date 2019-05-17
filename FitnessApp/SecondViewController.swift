@@ -3,11 +3,11 @@ import FirebaseAuth
 //whilst building firebase it fuvked up cuz we moved the files causong the app to not know where to locate them
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
-    
+    // This is the logout button, which lets you exit the app.
     @IBAction func logoutTapped(_ sender: Any) {
         AppManager.shared.logout()
     }
-    
+    //This is the image itself.
     @IBOutlet weak var profileimage: UIImageView!
     
     
@@ -15,7 +15,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         super.viewDidLoad()
     }
     
-    
+    //This is the button that you press that takes you to your photo gallery.
     @IBAction func UIbutton(_ sender: Any) {
     
     
@@ -36,7 +36,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     }
-
+// This is the start button that segues onto the map view controller. 
     @IBAction func startButton(_ sender: UIButton) {
     }
 

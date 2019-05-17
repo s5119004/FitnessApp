@@ -9,4 +9,4 @@ class AppContainerViewController: UIViewController {
         }
     
 }
-
+// The background work, which gets rid of any glitches. 

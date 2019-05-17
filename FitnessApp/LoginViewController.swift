@@ -2,7 +2,7 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController {
-    
+    // This is a button where you can type in your user email and password, which sends you to the main page.
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
