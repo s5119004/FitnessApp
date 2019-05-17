@@ -18,6 +18,7 @@ class MapViewController: UIViewController {
         
         MKMapView.userTrackingMode = .follow
         locationManager.requestAlwaysAuthorization()
+    //This adds the pop up asking the user for autherisation to acces their location
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
@@ -37,6 +38,7 @@ class MapViewController: UIViewController {
         let annotationOne = CustomAnnotation(coordinate: coordinates, title: title)
         MKMapView.addAnnotation(annotationOne)
         MKMapView.showAnnotations(MKMapView.annotations, animated: false)
+        // This indicates that all the coordinates will be shown on screen when the location is simulated
     }
  }
     func getDistance(from: CLLocation, to: CLLocationCoordinate2D) -> CLLocationDistance {
@@ -67,7 +69,7 @@ class MapViewController: UIViewController {
             let location = CLLocationCoordinate2D(latitude: randomLat, longitude: randomLong)
             
             items.append(location)
-            
+   
         }
         
         return items
@@ -76,6 +78,7 @@ class MapViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! SecondViewController
         self.dismiss(animated: true, completion: nil)
+        //this creates a greater flow within the viewcontroller lifecycle by reducing over lapping
     }
 }
 
@@ -88,3 +91,4 @@ extension MapViewController: CLLocationManagerDelegate{
     }
 }
 
+//
